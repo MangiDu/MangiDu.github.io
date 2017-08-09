@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo</title>
+  <style media="screen">
+    body {
+      background-color: #e6eaee;
+      padding: 20px 0;
+    }
+    #player {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="player"></div>
+  <script src="player.js" charset="utf-8"></script>
+  <script>
+    var el = document.getElementById('player')
+    var player = new Player({
+      el: el,
+      autoplay: true,
+      musics: [{
+        author: '周笔畅',
+        title: '用尽我的一切奔向你',
+        url: '用尽我的一切奔向你.mp3',
+        cover: '用尽我的一切奔向你.jpg'
+      }, {
+        author: 'GALA',
+        title: '我绝对不能失去你',
+        url: '我绝对不能失去你.mp3',
+        cover: '我绝对不能失去你.jpg'
+      }, {
+        author: '李悦君Ericaceae',
+        title: '梦伴',
+        url: '梦伴.mp3',
+        cover: '梦伴.jpg'
+      }]
+    })
+  </script>
+</body>
+</html>
